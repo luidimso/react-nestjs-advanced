@@ -1,3 +1,9 @@
+import NewMeetupForm from "../../components/meetups/NewMeetupForm";
+
 export default function NewPage() {
-    return <p>New Meetup Page</p>;
+    function onAddMeetup(meetupData) {
+        console.log(meetupData);
+    }
+
+    return <NewMeetupForm onAddMeetup={onAddMeetup}></NewMeetupForm>;
 }
