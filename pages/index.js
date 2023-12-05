@@ -16,7 +16,7 @@ const DUMMY_MEETUPS = [
         description: "Test 2"
     },
     {
-        id: "2",
+        id: "3",
         title: "The third",
         image: "https://jogoveio.com.br/wp-content/uploads/2022/10/thumb-peach-marioparty.jpg",
         address: "Rua do Teste",
