@@ -21,13 +21,15 @@ export async function getStaticPaths() {
 
     client.close();
 
+    // putting falback as blocking getStaticPath will not return a 404 if the page was not generated during building, but it will generate a new one (with the ID of the new meetup on that case)
+
     return {
         paths: meettups.map((meetup => ({
             params: {
                 id: meetup._id.toString()
             }
         }))),
-        fallback: false
+        fallback: "blocking"
     };
 }
 
